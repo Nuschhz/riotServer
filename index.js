@@ -31,6 +31,8 @@ function getPUUID(playerName, tagline, apiKey) {
     .catch((err) => err);
 }
 
+app.get("/", (req, res) => res.send("RiotAPI on Vercel"));
+
 app.get("/SummonerProfile", async (req, res) => {
   let playerName = req.query.username;
   let tagline = req.query.tagline;
@@ -92,3 +94,5 @@ app.get("/LeagueMatches", async (req, res) => {
 app.listen(4000, function () {
   console.log("Server started on port 4000");
 });
+
+module.exports = app;
