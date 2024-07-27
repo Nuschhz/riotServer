@@ -69,7 +69,7 @@ app.get("/LeagueMatches", async (req, res) => {
   let puuid = req.query.puuid;
   let continent = req.query.continent;
   let apiKey = req.query.apiKey;
-  const LEAGUE_GAMES_API_CALL = `${ContinentEndpoints[continent]}/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=40&api_key=${apiKey}`;
+  const LEAGUE_GAMES_API_CALL = `${ContinentEndpoints[continent]}/lol/match/v5/matches/by-puuid/${puuid}/ids?start=0&count=15&api_key=${apiKey}`;
 
   const gameIDS = await axios
     .get(LEAGUE_GAMES_API_CALL)
