@@ -2,10 +2,6 @@
 
 A server to recieve and return data from the RiotAPI 
 
-## Live Demo
-
-<https://riotplayerviewer-gustavo-silva-nuschs-projects.vercel.app>
-
 ## Built With
 
 - Javascript
